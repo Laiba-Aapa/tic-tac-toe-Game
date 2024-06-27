@@ -349,3 +349,35 @@ ol {
     transform: scale(1);
   }
 }
+
+@media only screen and (max-width : 425px) {
+  #game-board,#game-board ol{
+    flex-wrap: nowrap;
+  }
+  #game-board button{
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+  #players{
+    gap: .5rem;
+  }
+  #players li{
+    flex-direction: column;
+  }
+  .player{
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+  }
+  .player-name{
+        width: 1rem;
+          font-size: 12px;
+          white-space: nowrap;
+        }
+        .player-symbol{
+          
+          font-size: 12px;
+    }
+  
+}
